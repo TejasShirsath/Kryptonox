@@ -1,3 +1,1 @@
-#first time trying using git
-hello 
-hello guys
+this is my first commit

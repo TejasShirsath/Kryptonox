@@ -105,6 +105,134 @@ body {
 }
 
 
+/*Footer start*/
+
+.footer {
+  background-color: #24262b;
+  font-family: jost, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.footer-container {
+  max-width: 1170px;
+  padding: 40px;
+  margin: auto;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-family: jost, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer .arrow,
+.footer .icon {
+  color: #fff;
+  font-size: 20px;
+  margin: 10px 10px 0 0;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-family: jost, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.footer-col .social-links a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  border-top: 1px solid #606063;
+  line-height: 80px;
+}
+
+
+
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #fff;
+}
+
+@media(max-width: 767px) {
+  .footer-col {
+      width: 50%;
+      padding: 25px;
+  }
+}
+
+@media(max-width: 574px) {
+  .footer-col {
+      width: 100%;
+      text-align: center;
+  }
+
+  .footer .arrow {
+      font-size: 0;
+  }
+}
+
+/*Footer end*/
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

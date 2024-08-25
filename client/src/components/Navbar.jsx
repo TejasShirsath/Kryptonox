@@ -49,15 +49,18 @@ const Navbar = () => {
             target: "_blank",
           },
           {
+            title: "Tutorials",
+            link: "https://support.metamask.io/hc/en-us/articles/360045901112",
+            target: "_blank",
+          },
+          {
             title: "Blogs",
             link: "#blogs",
             target: "_blank",
           },
-         
           {
-            title: "Tutorials",
-            link: "https://support.metamask.io/hc/en-us/articles/360045901112",
-            target: "_blank",
+            title: "About Us",
+            link: "#about-us",
           },
           {
             title: "Contact Us",

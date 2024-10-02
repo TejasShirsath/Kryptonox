@@ -1,14 +1,16 @@
 import React from "react";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
 import logo from "../../images/logo.png";
 
 const NavBarItem = ({ title, classprops, link }) => {
   const openInNewTab =
     link !== "#market" &&
-    link !== "#about-us" &&
-    link !== "#blogs" &&
+    link !== "aboutus" &&
+    link !== "blogs" &&
+    link !== "contactus" &&
     link !== "#transactions";
   return (
     <li className={`mx-7 cursor-pointer ${classprops}`}>
@@ -55,16 +57,16 @@ const Navbar = () => {
           },
           {
             title: "Blogs",
-            link: "#blogs",
+            link: "blogs",
             target: "_blank",
           },
           {
             title: "About Us",
-            link: "#about-us",
+            link: "aboutus",
           },
           {
             title: "Contact Us",
-            link: "#about-us",
+            link: "contactus",
           },
         ].map((item, index) => (
           <NavBarItem
@@ -108,7 +110,11 @@ const Navbar = () => {
               },
               {
                 title: "Blogs",
-                link: "#blogs",
+                link: "blogs",
+              },
+              {
+                title: "About Us",
+                link: "aboutus",
               },
               
               {
@@ -117,7 +123,7 @@ const Navbar = () => {
               },
               {
               title: "Contact Us",
-              link: "#about-us",
+              link: "contactus",
               },
               ].map((item, index) => (
               <NavBarItem

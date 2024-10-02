@@ -7,11 +7,10 @@ import logo from "../../images/logo.png";
 
 const NavBarItem = ({ title, classprops, link }) => {
   const openInNewTab =
-    link !== "#market" &&
+    link !== "/" &&
     link !== "aboutus" &&
     link !== "blogs" &&
-    link !== "contactus" &&
-    link !== "#transactions";
+    link !== "contactus";
   return (
     <li className={`mx-7 cursor-pointer ${classprops}`}>
       <a
@@ -42,18 +41,8 @@ const Navbar = () => {
       <ul className="text-BLACK text-arial font-bold md:flex hidden list-none flex-row justify-between items-center flex-initial">
         {[
           {
-            title: "Market",
-            link: "#market",
-          },
-          {
-            title: "Transactions",
-            link: "#transactions",
-            target: "_blank",
-          },
-          {
-            title: "Tutorials",
-            link: "https://support.metamask.io/hc/en-us/articles/360045901112",
-            target: "_blank",
+            title: "Home",
+            link: "/",
           },
           {
             title: "Blogs",
@@ -68,6 +57,12 @@ const Navbar = () => {
             title: "Contact Us",
             link: "contactus",
           },
+          {
+            title: "Tutorials",
+            link: "https://support.metamask.io/hc/en-us/articles/360045901112",
+            target: "_blank",
+          },
+
         ].map((item, index) => (
           <NavBarItem
             key={item.title + index}

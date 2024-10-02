@@ -1,51 +1,37 @@
 import React from 'react';
-import { Navbar } from '../components'  // Optional: Use a separate CSS file for styling
-import '../pages/about.css';
-import { useState } from 'react';
+import { Navbar, Footer } from '../components'
 
 
 const AboutUs = () => {
-  const [feedback, setFeedback] = useState('');
-
-  const handleFeedbackChange = (event) => {
-    setFeedback(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission logic here
-    console.log('Feedback submitted:', feedback);
-    setFeedback(''); // Reset the form after submission
-  };
-
   return (
     <div>
-        <Navbar>aboutus</Navbar>
-    <div className="about-us-container">
-      <h2 className="about-title">About Us</h2>
-      <p className="about-description">
-        At Kryptonox, our goal is to make sending cryptocurrencies as fast, easy, 
-        and affordable as possible. Our platform is designed to be user-friendly 
-        and intuitive, allowing you to send cryptocurrencies to anyone, anywhere 
-        in the world with just a few clicks. Our team is dedicated to providing 
-        you with a seamless and hassle-free experience, and we are always looking 
-        for ways to improve. If you have any feedback or suggestions, please feel 
-        free to share them with us using the form below.
-      </p>
-      <h3 className="feedback-title">
-        Have feedback or questions? We'd love to hear from you!
-      </h3>
-      <form className="feedback-form" onSubmit={handleSubmit}>
-        <textarea
-          className="feedback-input"
-          value={feedback}
-          onChange={handleFeedbackChange}
-          placeholder="Enter your feedback here"
-          required
-        />
-        <button type="submit" className="submit-btn">Submit</button>
-      </form>
-    </div>
+      <Navbar>aboutus</Navbar>
+      <section className="about-main">
+        <div className="about-heading">
+            <h1>About Us</h1>
+            <p>Welcome to Affiliate Store!</p>
+        </div>
+        <div className="about-container">
+            <div className="about">
+                <div className="about-image">
+                    <img src="images/developer.jpg" alt=""/>
+                </div>
+                <div className="about-content">
+                    <h2>Hi there 👋</h2>
+                    <p>Welcome to Affiliate Store, your ultimate destination for discovering unique products.
+                       Founded by Tejas Shirsath, a passionate Computer Engineering diploma graduate currently pursuing studies in
+                       IT engineering, Affiliate Store aims to revolutionize the way you shop online by curating a collection of
+                       distinctive products sourced from various trusted sites.</p>
+                    <p>Unlike traditional e-commerce websites, Affiliate Store does not sell products directly. Instead, we act as a
+                       gateway to a world of unique finds by providing affiliate links to products from trusted retailers and brands.
+                       Whether you're looking for stylish gadgets, trendy fashion accessories, innovative tech gadgets, or home decor
+                       essentials, our carefully curated selection has something for everyone.</p>
+                    <a href="contact.html" className="contact-button">Contact Us</a>
+                </div>
+            </div>
+        </div>
+      </section>
+      <Footer></Footer>
     </div>
   );
 };

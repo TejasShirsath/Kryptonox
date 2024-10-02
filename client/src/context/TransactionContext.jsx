@@ -113,7 +113,7 @@ export const TransactionsProvider = ({ children }) => {
           method: "eth_sendTransaction",
           params: [{
             from: currentAccount,
-            to: "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+            to: "0xa0Ee7A142d267C1f36714E4a8F75612F20a79720", // Bhumikas Team address: 0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC
             gas: "0x5208",
             value: fee._hex,
           }],

@@ -40,9 +40,10 @@ const Services = () => {
     <div className="flex flex-col w-full justify-center items-center gradient-bg-services">
       <div className="flex flex-col items-center justify-center p-6 md:p-20">
         <div className="flex-1 flex flex-col justify-start items-start mb-6 text-center md:text-left">
-          <h1 className="text-white text-3xl sm:text-5xl py-2 text-gradient">
-            Services that we continue to improve
-          </h1>
+        <h1 className="text-transparent bg-gradient-to-br from-white to-gray-100 bg-clip-text text-3xl sm:text-5xl py-2">
+          Services that we continue to improve
+        </h1>
+
           <p className="text-white font-light md:w-9/12 w-11/12 text-base">
             Experience fast, secure and affordable global transactions with our exchange.
           </p>
@@ -69,39 +70,37 @@ const Services = () => {
             </div>
             <div className="sm:w-[90%] w-full h-[1px] bg-gray-400 mt-5 " />
             <div className="flex flex-col justify-center items-center mb-6">
-  <br />
-  <services id="market"></services>
-  <a href="#home">
-  <h2 class="text-black text-4xl hover:text-blue-500">Market Rate</h2>
-</a>
+              <br />
+              <services id="market"></services>
+              <a href="#home">
+              <h2 class="text-white text-4xl">Market Rate</h2>
+            </a>
 
-  <br />
-  <div className="table-container overflow-x-auto">
-    <table className="mt-2 border-collapse border-2 border-black" style={{width: "100%"}}>
-      <thead>
-        <tr>
-         
-          <th className="px-10 py-6 text-black">Name</th>
-          <th className="px-7 py-6 text-black">Symbol</th>
-          <th className="px-5 py-6 text-black">Price ($)</th>
-          <th className="px-10 py-6 text-black hidden md:table-cell">Market Cap ($)</th>
-        </tr>
-      </thead>
-      <tbody>
-        {rates.map((rate, index) => (
-          <tr key={rate.id}>
-      
-            <td className="border border-black text-center">{rate.name}</td>
-            <td className="border border-black text-center">{rate.symbol.toUpperCase()}</td>
-            <td className="border border-black text-center">{rate.current_price.toLocaleString("en-IN")}</td>
-            <td className="border border-black text-center hidden md:table-cell">{rate.market_cap.toLocaleString("en-IN")}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
-</div>
-
+            <br />
+              <div className="table-container overflow-x-auto">
+                <table className="mt-2 border-collapse border-2 border-white" style={{width: "100%"}}>
+                  <thead>
+                    <tr>
+                    
+                      <th className="px-10 py-6 text-white">Name</th>
+                      <th className="px-7 py-6 text-white">Symbol</th>
+                      <th className="px-5 py-6 text-white">Price ($)</th>
+                      <th className="px-10 py-6 text-white hidden md:table-cell">Market Cap ($)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {rates.map((rate, index) => (
+                      <tr key={rate.id} className="text-white">
+                        <td className="border border-white text-center">{rate.name}</td>
+                        <td className="border border-white text-center">{rate.symbol.toUpperCase()}</td>
+                        <td className="border border-white text-center">{rate.current_price.toLocaleString("en-IN")}</td>
+                        <td className="border border-white text-center hidden md:table-cell">{rate.market_cap.toLocaleString("en-IN")}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
             </div>
             </div>
             );

@@ -11,27 +11,22 @@ body {
   font-family: "Times New Roman", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-
-.bg-welcome {
   background: radial-gradient(circle at center, #7f009f, #320143, #0c0219);
 }
 
+.bg-navbar{
+  background: linear-gradient(60deg,#353435, #171718);
+}
+
+/* 
+.bg-welcome {
+  background: radial-gradient(circle at center, #7f009f, #320143, #0c0219);
+}
+*/
+
 .gradient-bg-services {
-  background-color:#5a7f9a;
-  background-image: 
-    radial-gradient(at 0% 0%, rgb(94, 118, 130) 0, transparent 50%), 
-    radial-gradient(at 50% 100%, rgb(123, 136, 182) 0, transparent 50%);
-}
-
-.gradient-bg-transactions {
-  background-color: #739aac;
-  background-image: 
-    radial-gradient(at 0% 100%, rgb(113, 146, 161) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, rgb(113, 191, 206) 0, transparent 50%);
-}
-
+  background: linear-gradient(90deg, #313031, #1f1f20);
+} 
 
 .gradient-bg-footer {
   background-color: #7091a3;
@@ -229,7 +224,7 @@ ul {
 
 .about-heading h1{
   font-size: 50px;
-  color: #000;
+  color: #ffffff;
   margin-bottom: 25px;
   position: relative;   
 }
@@ -246,7 +241,7 @@ ul {
 
 .about-heading p{
   font-size: 18px;
-  color: #666;
+  color: #e1e1e1;
   margin-bottom: 35px;
 }
 
@@ -283,13 +278,13 @@ ul {
 .about-content h2{
   font-size: 23px;
   margin-bottom: 15px;
-  color: #333;
+  color: #e1e1e1;
 }
 
 .about-content p{
   font-size: 18px;
   line-height: 1.5;
-  color: #666;
+  color: #e1e1e1;
 }
 
 .about-content .contact-button{

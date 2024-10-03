@@ -43,13 +43,13 @@ function Contactus() {
                         <span>
                             <ion-icon name="location-sharp"></ion-icon>
                         </span>
-                        <a href="https://maps.app.goo.gl/YWix7iKfvh3r6HDw6">Suite 111 942 Auer Road, Leuschkeborough, IA 69461</a>
+                        <a href="https://maps.app.goo.gl/A3P3iw8MmZGqiqRh7">Atharva College Of Engineering, Mumbai - 400095</a>
                     </div>
                     <div>
                         <span>
                             <ion-icon name="mail"></ion-icon>
                         </span>
-                        <a href="mailto:contact@abc.com">contact@abc.com</a>
+                        <a href="mailto:tejasshirsath_inft@atharvacoe.ac.in">contact@abc.com</a>
                     </div>
                     <div>
                         <span>

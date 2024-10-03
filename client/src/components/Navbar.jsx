@@ -9,7 +9,6 @@ const NavBarItem = ({ title, classprops, link }) => {
   const openInNewTab =
     link !== "/" &&
     link !== "aboutus" &&
-    link !== "blogs" &&
     link !== "contactus";
   return (
     <li className={`mx-7 cursor-pointer ${classprops}`}>
@@ -28,7 +27,7 @@ const NavBarItem = ({ title, classprops, link }) => {
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
   return (
-    <nav className="w-full flex md:justify-center justify-between items-center p-4">
+    <nav className="bg-navbar w-full flex md:justify-center justify-between items-center p-4">
       <div className="md:flex-[0.7] flex-initial justify-center items-center">
         <navbar id="home"></navbar>
         <img
@@ -38,16 +37,11 @@ const Navbar = () => {
           id="logo"
         />
       </div>
-      <ul className="text-BLACK text-arial font-bold md:flex hidden list-none flex-row justify-between items-center flex-initial">
+      <ul className="text-white text-arial font-bold md:flex hidden list-none flex-row justify-between items-center flex-initial">
         {[
           {
             title: "Home",
             link: "/",
-          },
-          {
-            title: "Blogs",
-            link: "blogs",
-            target: "_blank",
           },
           {
             title: "About Us",
@@ -102,10 +96,6 @@ const Navbar = () => {
               {
                 title: "Transactions",
                 link: "#transactions",
-              },
-              {
-                title: "Blogs",
-                link: "blogs",
               },
               {
                 title: "About Us",

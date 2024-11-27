@@ -69,15 +69,6 @@
 
 ---
 
-## Future Enhancements
-
-- **📱 Mobile Responsiveness:** Optimize Kryptonox for mobile devices.
-- **🛡️ Advanced Security Features:** Add multi-signature wallets and transaction approvals.
-- **📈 Transaction Analytics:** Provide detailed transaction history and insights.
-- **🔄 Support for Multiple Cryptocurrencies:** Extend support to other tokens like USDT, BNB, and more.
-
----
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).

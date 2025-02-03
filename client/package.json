@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --debug",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && vite build --debug",
     "serve": "vite preview"
   },
   "dependencies": {

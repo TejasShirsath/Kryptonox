@@ -14,7 +14,7 @@ const AboutUs = () => {
         <div className="about-container">
             <div className="about">
                 <div className="about-image">
-                    <img src="images/developer.jpg" alt=""/>
+                    <img src="https://res.cloudinary.com/dqofnqmsi/image/upload/v1754646378/developer_osddwl.jpg" alt=""/>
                 </div>
                 <div className="about-content">
                   <h2>Hi there 👋</h2>

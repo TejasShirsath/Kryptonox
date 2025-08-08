@@ -33,7 +33,7 @@ function Contactus() {
             
             {/*     Contact Image      */}
             <div class="contact sec-2">
-                <img src="images/contactImage.svg" alt=""/>
+                <img src="https://res.cloudinary.com/dqofnqmsi/image/upload/v1754646378/contactImage_nlxanq.svg" alt=""/>
             </div>
 
             {/*     Contact Details      */}

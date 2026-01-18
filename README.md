@@ -18,7 +18,6 @@
 
 - **Frontend:** React.js, TailwindCSS
 - **Backend:** Node.js, Solidity
-- **Blockchain Interaction:** Web3.js
 - **Wallet Integration:** MetaMask
 - **Smart Contract Deployment:** Ethereum Network
 
